@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: black;
+  color: white;
+  line-height: 1.6;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: black;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 3rem;
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.navbar ul li a:hover {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(142, 107, 221);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+section p {
+  font-size: 1.5rem;
+}
+
+/* Section Images */
+
+section#home {
+  background: url("https://wallpaperaccess.com/full/1216484.jpg") no-repeat
+    center center/cover;
+  align-items: initial;
+}
+
+section#home a {
+  position: relative;
+  left: -48.5rem;
+}
+
+section#home h1 {
+  text-align: left;
+  margin: 2rem;
+}
+
+section#aboutme {
+  background: url("https://wallpaperaccess.com/full/1216484.jpg") no-repeat
+    center center/cover;
+}
+
+section#projects {
+  background: url("https://wallpaperaccess.com/full/1216484.jpg") no-repeat
+    center center/cover;
+}
+
+/* slideshow */
+
+.slidershow {
+  width: 70%;
+  height: 75%;
+  overflow: hidden;
+}
+
+.navigation {
+  position: relative;
+  bottom: 50px;
+  left: 86%;
+  transform: translateX(-50%);
+  display: flex;
+  overflow: hidden;
+}
+
+.bar {
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.bar:hover {
+  background: #fff;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+.slide {
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+#r2:checked ~ .s1 {
+  margin-left: -20%;
+}
+#r3:checked ~ .s1 {
+  margin-left: -40%;
+}
+#r4:checked ~ .s1 {
+  margin-left: -60%;
+}
+#r5:checked ~ .s1 {
+  margin-left: -80%;
+}
+
+section#interests {
+  background: url("https://wallpaperaccess.com/full/1216484.jpg") no-repeat
+    center center/cover;
+}
+
+/* Style buttons */
+.btn {
+  width: 15%;
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 20px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 2rem;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+/* Sound player */
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.player-container {
+  height: 80%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.player-container svg {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  pointer-events: none;
+}
+
+.play {
+  position: relative;
+  left: 0.5rem;
+}

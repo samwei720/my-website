@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Website</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#interests">Interests</a></li>
+        </ul>
+      </nav>
+      <section id="home">
+        <h1>
+          Hello,
+          <p></p>
+          I'm Sam.
+          <p></p>
+          Welcome to my website.
+        </h1>
+        <a href="./pdf/Wei's Resume.pdf" download="Wei's Resume">
+          <button class="btn">Download CV</button>
+        </a>
+      </section>
+      <section id="aboutme">
+        <h1>About Me</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
+          temporibus sapiente beatae debitis illum inventore.
+        </p>
+      </section>
+      <section id="projects">
+        <div class="slidershow">
+          <div class="slides">
+            <input type="radio" name="r" id="r1" checked />
+            <input type="radio" name="r" id="r2" />
+            <input type="radio" name="r" id="r3" />
+            <input type="radio" name="r" id="r4" />
+            <input type="radio" name="r" id="r5" />
+            <div class="slide s1">
+              <img src="./jpg/1.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./jpg/2.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./jpg/3.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./jpg/4.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./jpg/5.jpg" alt="" />
+            </div>
+          </div>
+          <div class="navigation">
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+            <label for="r5" class="bar"></label>
+          </div>
+        </div>
+      </section>
+      <section id="interests">
+        <h1></h1>
+        <p></p>
+        <div class="app">
+          <div class="player-container">
+            <audio class="song">
+              <source src="./sounds/twice-cry-for-me-official-audio.mp3" />
+            </audio>
+            <img src="./svg/play.svg" alt="play" class="play" />
+            <svg
+              class="track-outline"
+              width="453"
+              height="453"
+              viewBox="0 0 453 453"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="226.5"
+                cy="226.5"
+                r="216.5"
+                stroke="white"
+                stroke-width="20"
+              />
+            </svg>
+            <svg
+              class="moving-outline"
+              width="453"
+              height="453"
+              viewBox="0 0 453 453"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="226.5"
+                cy="226.5"
+                r="216.5"
+                stroke="purple"
+                stroke-width="20"
+              />
+            </svg>
+          </div>
+        </div>
+        <script src="./app.js"></script>
+      </section>
+    </div>
+  </body>
+</html>
